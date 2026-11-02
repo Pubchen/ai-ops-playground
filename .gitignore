@@ -1,0 +1,12 @@
+# Python 虚拟环境与缓存：永远不要提交
+.venv/
+venv/
+__pycache__/
+*.pyc
+# 密钥文件：永远不要提交
+.env
+*.pem
+# 编辑器与系统垃圾
+.DS_Store
+.idea/
+.vscode/
