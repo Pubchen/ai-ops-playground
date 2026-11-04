@@ -28,4 +28,10 @@
 - 环境核对：python 3.15.2 / pip 26.2.2 / VS Code 1.144 / git 2.50 / ssh key 均在；conda 与 jupyter 缺
 - 建学习专用 venv：~/venvs/ai-learn，装 numpy/pandas/matplotlib/jupyterlab
 - 注册 Kaggle / 魔搭 / HuggingFace 三账号；Kaggle 验证通道调整，改人脸识别通过、phone verification 显示 verified（见 errors.md 006）；GPU 配额（约 30h/周）确认到账，Accelerator 可选 + nvidia-smi 实锤；魔搭昵称 pubchen，我的Notebook 免费实例确认：CPU 8核32G 长期有效 + GPU 8核32G/显存24G 剩余约36h（停止状态不计时）；HF 主站暂不可达，注册推迟——下载模型走 hf-mirror.com 不需账号，注册只影响第 19 周课程证书
-- 笔记体系进仓库：notes/errors.md + notes/daily.md，用 git 管理 = 自动备份 + 作品集素材
+- 笔记体系进仓库：notes/errors.md + notes/daily.md，用 git 管理 = 自动备份 + 作品集素材；提交 51cef6c 已推送，working tree clean
+
+## Day 5（2026-11-04）日历固化 + 台账机制改版
+
+- 日历：清除旧 4 条事件（AppleScript 对 iCloud 日历删除不持久化，改 GUI 手删，见 errors.md 待补），导入新版仅「工作日块 周一~五 09:00-17:00」；周末与每日底线不设
+- 台账机制：周回顾改由助手按会话实时进度不定期维护（进度表/daily/errors + 跨周摘要）；本人只贴 checkpoint 输出 + 周日 30 秒核对并补实际耗时/自评
+- pandas 首练完成：JupyterLab 六练输出与基准全对（inventory 10 / WARN&inventory 8 / rt 均524.7 最大2300）；存为 day5-pandas首练.ipynb 并入仓 notebooks/；踩坑：md 代码围栏```粘进 cell 致 SyntaxError、单 cell 只显示最后一个裸表达式

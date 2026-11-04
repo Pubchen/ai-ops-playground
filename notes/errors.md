@@ -44,3 +44,17 @@
 - 原因：**Kaggle 调整了验证流程/通道**（并非账号风控）；人脸识别为替代通道
 - 解法：改走人脸识别验证完成；随后账号页 phone verification 状态显示 **verified**
 - 日期/场景：2026-11-04 / Day 4 账号注册
+
+## 007 notebook 里跑手册代码报 SyntaxError: invalid syntax（箭头指向 ```python）
+
+- 报错/现象：把 day5 手册的代码块整段粘进 Jupyter cell 后运行报语法错误
+- 原因：``` 是 Markdown 代码围栏标记，不是 Python 语法；粘进 code cell 即非法字符
+- 解法：只复制围栏**里面**的代码；手册顶部已加「复制纪律」提醒
+- 日期/场景：2026-11-04 / Day 5 pandas 首练
+
+## 008 cell 里写了 df.head()/df.shape/df.dtypes 却只看到 dtypes
+
+- 报错/现象：以为 shape 没执行、数据丢了
+- 原因：Jupyter 一个 cell 只自动显示**最后一个裸表达式**的值，其余执行了但不显示
+- 解法：想全看就用 print() 包起来，或一格只看一件事；df.shape 是属性不加括号、df.head() 是方法加括号
+- 日期/场景：2026-11-04 / Day 5 pandas 首练
